@@ -17,7 +17,7 @@ end)
 
 -- CODICE BLIP GRIDSYSTEM --
 Citizen.CreateThread(function()
-  for krs,shopmedico in pairs(Config.shopmedico) do
+  for yd,shopmedico in pairs(Config.shopmedico) do
       TriggerEvent('gridsystem:registerMarker', {
           name = 'shopmedico'..shopmedico.x,
           pos = vector3(shopmedico.x, shopmedico.y, shopmedico.z),
